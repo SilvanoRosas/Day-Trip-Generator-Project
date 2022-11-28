@@ -1,0 +1,81 @@
+from ast import Return
+import random
+trip_destinations = ("California", "Arizona", "Texas", "Florida")
+def select_random_trip_destination(daytrips):
+    chosen_random_destination = random.choice(daytrips)
+    print(chosen_random_destination)
+    return chosen_random_destination
+choices_objecta = select_random_trip_destination(trip_destinations)
+print("Do you like the chosen destination?")
+answer = input ("")
+while answer == "N":
+    print(select_random_trip_destination(trip_destinations))
+    print("Do you like your chosen destination?")
+    answer = input("")
+if answer == "Y":
+    print("Great choice")
+trip_resturants = ("Ay Mi Pa", "Sushi Ono", "Ruths Chris", "Flemings")
+def select_random_trip_resturant(foods):
+    chosen_random_resturant = random.choice(foods)
+    print(chosen_random_resturant)
+    return chosen_random_resturant
+choices_objectb = select_random_trip_resturant(trip_resturants)
+print("Do you like the chosen destination?")
+answer = input("")
+while answer == "N":
+    print ("Sorry to say but the random selection was not to your liking")
+    print (select_random_trip_resturant(trip_resturants))
+    print ("Do you like your chosen destination?")
+    answer = input("")
+    print ("Sorry to hear your selection was not to your liking")
+else:
+    print("We will make reservations for your trip")
+trip_transportation = ("Uber", "Party Bus", "Plane", "Lyft")
+def select_random_trip_transportation(rides):
+    chosen_random_transportation = random.choice(rides)
+    print(chosen_random_transportation)
+    return chosen_random_transportation
+choices_objectc = select_random_trip_transportation(trip_transportation)
+print("Do you like your chosen transportation?")
+answer = input("")
+while answer == "N":
+    print("Sorry to hear the random selection was not to your liking")
+    print(select_random_trip_transportation(trip_transportation))
+    print("Do you like your chosen destination?")
+    answer = input("")
+    print ("Sorry to hear your selection was not to your liking")
+else:
+    print("We will make reservations for your trip")
+trip_entertainment = ("Parq Nightclub", "Toro Bar", "San Diego  Museums", "Migo Concert")
+def select_random_entertainment(things_to_do):
+    chosen_random_entertainment = random.choice(things_to_do)
+    print(chosen_random_entertainment)
+    return chosen_random_entertainment
+choices_objectd = select_random_entertainment(trip_entertainment)
+print("Do you like your chosen entertainment?")
+answer = input("")
+while answer == "N":
+    print ("Sorry to hear but your random selection was  not to your liking")
+    print(select_random_entertainment(trip_entertainment))
+    print("Do you like your chosen destination?")
+    answer = input("")
+    print ("Sorry to hear your selection was not to your liking")
+else:
+    print("We will make reservations for your trip")
+    print("Congratulations your trip is booked lets confirm the details")
+choices_objecta = select_random_trip_destination
+choices_objectb = select_random_trip_resturant
+choices_objectc = select_random_trip_transportation
+choices_objectd = select_random_entertainment
+def finalize_trip():
+    print("Here is your current trip")
+    print(select_random_trip_destination)
+    print(select_random_trip_resturant)
+    print(select_random_trip_transportation)
+    print(select_random_entertainment)
+print("Do you have any objections to the trip?")
+answer = input ("Yes or No?")
+while answer == "N":
+    Return
+while answer == "Y":
+    print("Thank You for using the Day Trip Generator. Enjoy Your Trip!")
